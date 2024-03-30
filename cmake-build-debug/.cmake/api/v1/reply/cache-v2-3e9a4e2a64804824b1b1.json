@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "_01"
+			"value" : "array"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1143,6 +1143,78 @@
 		},
 		{
 			"name" : "_01_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/goojin/Desktop/konkuk/data-structure-cpp"
+		},
+		{
+			"name" : "array/_01_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug"
+		},
+		{
+			"name" : "array/_01_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "array/_01_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/goojin/Desktop/konkuk/data-structure-cpp"
+		},
+		{
+			"name" : "array_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug"
+		},
+		{
+			"name" : "array_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "array_SOURCE_DIR",
 			"properties" : 
 			[
 				{

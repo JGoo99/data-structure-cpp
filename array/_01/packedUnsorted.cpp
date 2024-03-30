@@ -52,7 +52,7 @@ int main() {
     print();
 
     cin >> c;
-    if (c == 'F') {
+    if (c == 'f') {
       cout << "<<<<<< Find >>>>>>" << endl;
       cout << "Enter value to find: ";
 
@@ -64,7 +64,7 @@ int main() {
         cout << x << " Found At Index " << index << endl;
       }
     }
-    else if (c == 'I') {
+    else if (c == 'i') {
       cout << "<<<<<< Insert >>>>>>" << endl;
       cout << "Enter value to insert: ";
 
@@ -73,7 +73,7 @@ int main() {
         insert(x);
       }
     }
-    else if (c == 'D') {
+    else if (c == 'd') {
       cout << "<<<<<< Delete >>>>>>" << endl;
       cout << "Enter value to delete: ";
 
@@ -85,12 +85,12 @@ int main() {
         del(index);
       }
     }
-    else if (c == 'Q') {
+    else if (c == 'q') {
       cout << "<<<<<< Quit >>>>>>" << endl;
       break;
     }
     else {
-      cout << "Retry [F:find, I:insert, D:delete, Q:quit]" << endl;
+      cout << "Retry [f:find, i:insert, d:delete, q:quit]" << endl;
     }
   }
   return 0;

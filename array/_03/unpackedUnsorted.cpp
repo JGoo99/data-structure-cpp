@@ -5,6 +5,7 @@ using namespace std;
 #define MAX_SIZE 100
 
 int A[MAX_SIZE];
+int B[MAX_SIZE];
 int S;
 
 int indexOf(int x) {
@@ -15,7 +16,7 @@ int indexOf(int x) {
     int mid = (start + end) / 2;
 
     if (A[mid] == x) {
-      return mid;
+      return B[mid] == 1 ? 1 : -1;
     }
     else if (A[mid] < x) {
       start = mid + 1;
