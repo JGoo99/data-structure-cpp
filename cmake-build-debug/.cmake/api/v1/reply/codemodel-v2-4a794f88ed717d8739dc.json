@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/goojin/CLionProjects/asg1/cmake-build-debug",
-		"source" : "/Users/goojin/CLionProjects/asg1"
+		"build" : "/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug",
+		"source" : "/Users/goojin/Desktop/konkuk/data-structure-cpp"
 	},
 	"version" : 
 	{

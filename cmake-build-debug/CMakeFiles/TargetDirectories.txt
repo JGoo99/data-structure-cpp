@@ -1,3 +1,3 @@
-/Users/goojin/CLionProjects/asg1/cmake-build-debug/CMakeFiles/_01.dir
-/Users/goojin/CLionProjects/asg1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/goojin/CLionProjects/asg1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug/CMakeFiles/_01.dir
+/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

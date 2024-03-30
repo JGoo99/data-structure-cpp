@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/goojin/CLionProjects/asg1/cmake-build-debug"
+			"value" : "/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/goojin/CLionProjects/asg1/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/goojin/CLionProjects/asg1"
+			"value" : "/Users/goojin/Desktop/konkuk/data-structure-cpp"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/goojin/CLionProjects/asg1/cmake-build-debug"
+			"value" : "/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug"
 		},
 		{
 			"name" : "_01_IS_TOP_LEVEL",
@@ -1151,43 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/goojin/CLionProjects/asg1"
-		},
-		{
-			"name" : "asg1_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/goojin/CLionProjects/asg1/cmake-build-debug"
-		},
-		{
-			"name" : "asg1_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "asg1_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/goojin/CLionProjects/asg1"
+			"value" : "/Users/goojin/Desktop/konkuk/data-structure-cpp"
 		}
 	],
 	"kind" : "cache",
