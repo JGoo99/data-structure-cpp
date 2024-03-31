@@ -21,7 +21,7 @@ void insert(int x) {
     A[S] = x;
     S++;
   } else {
-    cout << "Array is full." << endl;
+    printf("Array is full.\n");
   }
 }
 
@@ -30,17 +30,17 @@ void del(int index) {
   S--;
 }
 
-void print() {
+void printArray() {
   // 인덱스
   for (int j = 0; j < S; j++) {
-    cout << setw(3) << j << "   ";
+    printf("%3d   ", j);
   }
-  cout << endl;
+  printf("\n");
   // 요소
   for (int j = 0; j < S; j++) {
-    cout << setw(3) << A[j] << "   ";
+    printf("%3d   ", A[j]);
   }
-  cout << endl;
+  printf("\n");
 }
 
 int main() {
@@ -48,25 +48,25 @@ int main() {
   int x;
 
   while (true) {
-    cout << "Size: " << S << endl;
-    print();
+    printf("Size: %d\n", S);
+    printArray();
 
     cin >> c;
     if (c == 'f') {
-      cout << "<<<<<< Find >>>>>>" << endl;
-      cout << "Enter value to find: ";
+      printf("<<<<<< Find >>>>>>\n");
+      printf("Enter value to find: ");
 
       cin >> x;
       int index = indexOf(x);
       if (index == -1) {
-        cout << x << " Not Found" << endl;
+        printf("%d Not Found\n", x);
       } else {
-        cout << x << " Found At Index " << index << endl;
+        printf("%d Found At Index %d\n", x, index);
       }
     }
     else if (c == 'i') {
-      cout << "<<<<<< Insert >>>>>>" << endl;
-      cout << "Enter value to insert: ";
+      printf("<<<<<< Insert >>>>>>\n");
+      printf("Enter value to insert: ");
 
       cin >> x;
       if (indexOf(x) == -1) {
@@ -74,23 +74,23 @@ int main() {
       }
     }
     else if (c == 'd') {
-      cout << "<<<<<< Delete >>>>>>" << endl;
-      cout << "Enter value to delete: ";
+      printf("<<<<<< Delete >>>>>>\n");
+      printf("Enter value to delete: ");
 
       cin >> x;
       int index = indexOf(x);
       if (index == -1) {
-        cout << x << " Not Found" << endl;
+        printf("%d Not Found\n", x);
       } else {
         del(index);
       }
     }
     else if (c == 'q') {
-      cout << "<<<<<< Quit >>>>>>" << endl;
+      printf("<<<<<< Quit >>>>>>\n");
       break;
     }
     else {
-      cout << "Retry [f:find, i:insert, d:delete, q:quit]" << endl;
+      printf("Retry [f:find, i:insert, d:delete, q:quit]\n");
     }
   }
   return 0;
