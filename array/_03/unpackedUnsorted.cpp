@@ -16,7 +16,7 @@ int indexOf(int x) {
     int mid = (start + end) / 2;
 
     if (A[mid] == x) {
-      return B[mid] == 1 ? 1 : -1;
+      return mid;
     }
     else if (A[mid] < x) {
       start = mid + 1;
@@ -44,7 +44,20 @@ int findInsertPosition(int x) {
       end = mid - 1;
     }
   }
+  if (insertPosition > 0 && B[insertPosition - 1] == 0) {
+    return insertPosition - 1;
+  }
   return insertPosition;
+}
+
+int findNextEmptyPosition(int insertPosition) {
+  int i = insertPosition;
+  for (; i < S; i++) {
+    if (B[i] == 0) {
+      return i;
+    }
+  }
+  return i;
 }
 
 void insert(int x) {
@@ -53,20 +66,27 @@ void insert(int x) {
     return;
   }
 
-  int insertPosition = findInsertPosition(x);
+  int insertPosition = indexOf(x);
 
-  for (int i = S; i > insertPosition; i--) {
-    A[i] = A[i - 1];
+  if (insertPosition != -1 && B[insertPosition] == 0) {
+    B[insertPosition] = 1;
+  } else {
+    insertPosition = findInsertPosition(x);
+    int rightEmptyPosition = findNextEmptyPosition(insertPosition);
+    for (int i = rightEmptyPosition; i > insertPosition; i--) {
+      A[i] = A[i - 1];
+      B[i] = B[i - 1];
+    }
+    B[insertPosition] = 1;
+    if (rightEmptyPosition == S) {
+      S++;
+    }
   }
   A[insertPosition] = x;
-  S++;
 }
 
 void del(int index) {
-  for (int i = index; i < S - 1; i++) {
-    A[i] = A [i + 1];
-  }
-  S--;
+  B[index] = 0;
 }
 
 void print() {
@@ -82,7 +102,7 @@ void print() {
   cout << endl;
   // 마커 (0:none, 1:fill)
   for (int j = 0; j < S; j++) {
-    cout << setw(3) << A[j] << "   ";
+    cout << setw(3) << B[j] << "   ";
   }
   cout << endl;
 }
@@ -96,7 +116,7 @@ int main() {
     print();
 
     cin >> c;
-    if (c == 'F') {
+    if (c == 'f') {
       cout << "<<<<<< Find >>>>>>" << endl;
       cout << "Enter value to find: ";
 
@@ -105,19 +125,24 @@ int main() {
       if (index == -1) {
         cout << x << " Not Found" << endl;
       } else {
-        cout << x << " Found At Index " << index << endl;
+        if (B[index] == 0) {
+          cout << x << " Not Found" << endl;
+        } else {
+          cout << x << " Found At Index " << index << endl;
+        }
       }
     }
-    else if (c == 'I') {
+    else if (c == 'i') {
       cout << "<<<<<< Insert >>>>>>" << endl;
       cout << "Enter value to insert: ";
 
       cin >> x;
-      if (indexOf(x) == -1) {
+      int index = indexOf(x);
+      if (index == -1 || B[index] == 0) {
         insert(x);
       }
     }
-    else if (c == 'D') {
+    else if (c == 'd') {
       cout << "<<<<<< Delete >>>>>>" << endl;
       cout << "Enter value to delete: ";
 
@@ -129,12 +154,12 @@ int main() {
         del(index);
       }
     }
-    else if (c == 'Q') {
+    else if (c == 'q') {
       cout << "<<<<<< Quit >>>>>>" << endl;
       break;
     }
     else {
-      cout << "Retry [F:find, I:insert, D:delete, Q:quit]" << endl;
+      cout << "Retry [f:find, i:insert, d:delete, q:quit]" << endl;
     }
   }
   return 0;
