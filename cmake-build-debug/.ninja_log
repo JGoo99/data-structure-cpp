@@ -1,13 +1,7 @@
 # ninja log v5
-0	423	1711862671945857713	CMakeFiles/unpackedUnsorted.dir/array/_03/unpackedUnsorted.cpp.o	7f83286c195f432d
-424	454	1711862671981076154	unpackedUnsorted	65406c2fcb42b763
-0	660	1711863240959403813	CMakeFiles/packedUnsorted.dir/array/_01/packedUnsorted.cpp.o	42e3dae1498c54b
-660	797	1711863241094727195	packedUnsorted	a54a7d644d9b7c19
-0	682	1711863456805513272	CMakeFiles/packedSorted.dir/array/_02/packedSorted.cpp.o	e0245872a8b46c4a
-682	818	1711863456941347226	packedSorted	b1877a54a1a32121
-2	695	1711878701136273331	CMakeFiles/packedUnsorted.dir/array/_01/packedUnsorted.cpp.o	42e3dae1498c54b
-695	834	1711878701277286548	packedUnsorted	a54a7d644d9b7c19
-2	367	1711878727452787028	CMakeFiles/packedUnsorted.dir/array/_01/packedUnsorted.cpp.o	42e3dae1498c54b
+690	800	1711880088869765901	unpackedUnsorted	65406c2fcb42b763
 367	399	1711878727484534826	packedUnsorted	a54a7d644d9b7c19
 6	690	1711880088755667513	CMakeFiles/unpackedUnsorted.dir/array/_03/unpackedUnsorted.cpp.o	7f83286c195f432d
-690	800	1711880088869765901	unpackedUnsorted	65406c2fcb42b763
+2	367	1711878727452787028	CMakeFiles/packedUnsorted.dir/array/_01/packedUnsorted.cpp.o	42e3dae1498c54b
+0	682	1711863456805513272	CMakeFiles/packedSorted.dir/array/_02/packedSorted.cpp.o	e0245872a8b46c4a
+682	818	1711863456941347226	packedSorted	b1877a54a1a32121
