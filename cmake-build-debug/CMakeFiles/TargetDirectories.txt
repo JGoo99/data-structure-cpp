@@ -1,5 +1,0 @@
-/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug/CMakeFiles/packedUnsorted.dir
-/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug/CMakeFiles/packedSorted.dir
-/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug/CMakeFiles/unpackedUnsorted.dir
-/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/goojin/Desktop/konkuk/data-structure-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
